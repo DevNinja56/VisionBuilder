@@ -1,0 +1,42 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_Home">
+    <fragment
+        android:id="@+id/navigation_Home"
+        android:name="com.my.visionbuilder.fragments.HomeFragment"
+        tools:layout="@layout/fragment_home" />
+    <activity
+        android:id="@+id/navigation_Calendar"
+        android:name="com.my.visionbuilder.activities.Calender.CalendarActivity"
+        tools:layout="@layout/activity_calendar" />
+    <activity
+        android:id="@+id/navigation_Meetings"
+        android:name="com.my.visionbuilder.activities.Meetings.MeetingsActivity"
+        tools:layout="@layout/activity_meetings" />
+    <activity
+        android:id="@+id/navigation_TodoList"
+        android:name="com.my.visionbuilder.activities.TodoList.TodoListActivity"
+        tools:layout="@layout/activity_todo_list" />
+    <activity
+        android:id="@+id/navigation_Goals"
+        android:name="com.my.visionbuilder.activities.Goals.GoalsActivity"
+        tools:layout="@layout/activity_goals" />
+    <activity
+        android:id="@+id/navigation_Finance"
+        android:name="com.my.visionbuilder.activities.Finance.FinanceActivity"
+        tools:layout="@layout/activity_finance" />
+    <activity
+        android:id="@+id/navigation_Business"
+        android:name="com.my.visionbuilder.activities.Business.BusinessActivity"
+        tools:layout="@layout/activity_business" />
+    <activity
+        android:id="@+id/navigation_Trips"
+        android:name="com.my.visionbuilder.activities.TripsActivity"
+        tools:layout="@layout/activity_trips" />
+    <activity
+        android:id="@+id/navigation_Contacts"
+        android:name="com.my.visionbuilder.activities.Contact.ContactsActivity"
+        tools:layout="@layout/activity_calendar" />
+</navigation>

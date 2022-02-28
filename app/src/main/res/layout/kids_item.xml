@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_80sdp"
+    android:elevation="@dimen/_1sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:layout_marginHorizontal="@dimen/_25sdp"
+    android:background="@drawable/bg_rounded_corners_light"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    android:id="@+id/item"
+    >
+    <ImageView
+        android:id="@+id/btn_Next"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="@dimen/_18sdp"
+        android:src="@drawable/arrow_forward_ic"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        />
+    <LinearLayout
+        android:id="@+id/upper_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/source_Name"
+            android:maxWidth="@dimen/_300sdp"
+            android:maxLines="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:textFontWeight="800"
+            android:text="Kid Name"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_18sdp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

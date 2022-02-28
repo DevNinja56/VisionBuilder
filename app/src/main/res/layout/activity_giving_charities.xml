@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Goals.GoalsActivity">
+    <RelativeLayout
+        android:id="@+id/top_Bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170sdp"
+        android:background="@color/colorPrimary"
+        >
+        <RelativeLayout
+            android:id="@+id/back_Sign"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:paddingHorizontal="@dimen/_30sdp">
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/back_arrow_ic"
+                android:layout_marginTop="@dimen/_30sdp"
+                />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/back_Sign"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="17dp"
+            android:fontFamily="@font/roboto_bold"
+            android:maxWidth="@dimen/_200sdp"
+            android:text="Giving Charities Savings"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_22sdp" />
+
+        <ImageView
+            android:id="@+id/activity_Icon"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginRight="-5dp"
+            android:layout_marginBottom="28dp"
+            android:src="@drawable/saving_plan_ic" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_Bar"
+        android:background="@drawable/bg_upper_curve"
+        android:layout_marginTop="@dimen/_minus13sdp"
+        android:orientation="vertical">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="@dimen/_40sdp"
+                android:scrollbars="none"
+                />
+        </ScrollView>
+        <RelativeLayout
+            android:layout_width="@dimen/_70sdp"
+            android:layout_height="@dimen/_70sdp"
+            android:background="@drawable/bg_circle"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/_20sdp"
+            android:id="@+id/btn_Add"
+            android:translationZ="1dp"
+            >
+            <ImageView
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/plus_ic"
+                android:layout_centerInParent="true"
+                />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

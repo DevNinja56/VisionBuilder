@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Finance.HouseFinance.HouseFinanceDetailsActivity">
+    <RelativeLayout
+        android:id="@+id/top_Bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_140sdp"
+        android:background="@color/colorPrimary"
+        >
+        <RelativeLayout
+            android:id="@+id/back_Sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/_30sdp"
+            android:paddingBottom="@dimen/_15sdp">
+            <ImageView
+                android:layout_alignParentLeft="true"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:src="@drawable/back_arrow_ic"
+                android:layout_marginLeft="@dimen/_30sdp"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_below="@id/back_Sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Details"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_22sdp" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_Bar"
+        android:background="@drawable/bg_upper_curve"
+        android:layout_marginTop="@dimen/_minus13sdp"
+        >
+        <LinearLayout
+            android:background="@drawable/bg_rounded_corners_light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="@dimen/_25sdp"
+            android:padding="@dimen/_5sdp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:maxWidth="@dimen/_200sdp"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textFontWeight="500"
+                    android:text="Amount"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_20sdp" />
+
+                <TextView
+                    android:id="@+id/task_Date"
+                    android:maxWidth="@dimen/_280sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="4500 $"
+                    android:textColor="@color/colorHint"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:maxWidth="@dimen/_200sdp"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textFontWeight="500"
+                    android:text="Name of Source"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_20sdp" />
+
+                <TextView
+                    android:id="@+id/name_OfSource"
+                    android:maxWidth="@dimen/_280sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="January"
+                    android:textColor="@color/colorHint"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:orientation="vertical">
+                <TextView
+                    android:maxWidth="@dimen/_300sdp"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textFontWeight="500"
+                    android:text="Date of investment"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_20sdp" />
+
+                <TextView
+                    android:id="@+id/task_Time"
+                    android:maxWidth="@dimen/_280sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="January"
+                    android:textColor="@color/colorHint"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/upper_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/title"
+                    android:maxWidth="@dimen/_200sdp"
+                    android:maxLines="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:textFontWeight="500"
+                    android:text="Description"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_20sdp" />
+
+                <TextView
+                    android:id="@+id/shop_name"
+                    android:maxWidth="@dimen/_280sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_regular"
+                    android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et"
+                    android:textColor="@color/colorHint"
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:layout_marginHorizontal="@dimen/_30sdp"
+                android:orientation="horizontal"
+                android:gravity="right">
+                <RelativeLayout
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/bg_circle"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/_20sdp"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:id="@+id/btn_Delete"
+                    android:translationZ="1dp"
+                    android:elevation="5dp"
+
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/delete_ic"
+                        android:layout_centerInParent="true"
+                        />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="@dimen/_35sdp"
+                    android:layout_height="@dimen/_35sdp"
+                    android:background="@drawable/bg_circle"
+                    android:layout_toLeftOf="@+id/btn_Delete"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="@dimen/_20sdp"
+                    android:layout_marginRight="@dimen/_10sdp"
+                    android:id="@+id/btn_add_reminde"
+                    android:translationZ="1dp"
+                    android:elevation="5dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="@dimen/_20sdp"
+                        android:layout_height="@dimen/_20sdp"
+                        android:src="@drawable/edit_ic"
+                        android:layout_centerInParent="true"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

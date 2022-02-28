@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="150dp"
+    android:elevation="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:layout_marginHorizontal="@dimen/_25sdp"
+    android:id="@+id/item"
+    android:background="@drawable/bg_rounded_corners_light"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    >
+    <LinearLayout
+        android:id="@+id/upper_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_30sdp"
+        android:orientation="vertical">
+        <TextView
+            android:id="@+id/shop_name"
+            android:maxWidth="@dimen/_280sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Work Title"
+            android:textAllCaps="true"
+            android:textFontWeight="600"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/remind_me_about"
+            android:maxWidth="@dimen/_250sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et"
+            android:textColor="@color/textColorLight"
+            android:textSize="@dimen/_15sdp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/backsign"
+        android:layout_width="@dimen/_25sdp"
+        android:layout_height="@dimen/_25sdp"
+        android:src="@drawable/arrow_forward_ic"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/_25sdp"
+
+        />
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.Finance.Banking.BankingTransactionsActivity">
+    <RelativeLayout
+        android:id="@+id/top_Bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_170sdp"
+        android:background="@color/colorPrimary"
+        >
+        <RelativeLayout
+            android:id="@+id/back_Sign"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/_50sdp"
+            android:paddingHorizontal="@dimen/_30sdp">
+            <ImageView
+
+                android:layout_alignParentLeft="true"
+                android:layout_width="@dimen/_25sdp"
+                android:layout_height="@dimen/_25sdp"
+                android:src="@drawable/back_arrow_ic"
+                android:layout_marginTop="@dimen/_30sdp"
+                />
+        </RelativeLayout>
+        <TextView
+            android:layout_below="@id/back_Sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="Education"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/_22sdp" />
+
+        <ImageView
+            android:id="@+id/activity_Icon"
+            android:layout_width="@dimen/_55sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="31dp"
+            android:src="@drawable/education_ic" />
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top_Bar"
+        android:background="@drawable/bg_upper_curve"
+        android:layout_marginTop="@dimen/_minus13sdp"
+        android:orientation="vertical">
+        <com.google.android.material.tabs.TabLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_upper_curve_2"
+            android:id="@+id/tabbed_layout"
+
+            >
+        </com.google.android.material.tabs.TabLayout>
+        <androidx.viewpager.widget.ViewPager
+            android:layout_below="@id/tabbed_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/view_pager"
+            />
+    </LinearLayout>
+</RelativeLayout>

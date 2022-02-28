@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:elevation="@dimen/_5sdp"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:layout_marginHorizontal="@dimen/_25sdp"
+    android:id="@+id/reminder_item"
+    android:background="@drawable/bg_rounded_corners_light"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    >
+    <TextView
+        android:id="@+id/borrow_Date"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="04:25 PM"
+        android:textFontWeight="600"
+        android:textColor="@color/textColorLight"
+        android:textSize="@dimen/_15sdp" />
+    <TextView
+        android:id="@+id/date"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="23 Sep 2020"
+        android:textFontWeight="600"
+        android:textColor="@color/textColorLight"
+        android:textSize="@dimen/_15sdp" />
+
+
+    <LinearLayout
+        android:id="@+id/upper_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_50sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/shop_name"
+            android:maxWidth="@dimen/_280sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="PLACE NAME"
+            android:textAllCaps="true"
+            android:textFontWeight="600"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/_20sdp" />
+
+        <TextView
+            android:id="@+id/gate_No"
+            android:maxWidth="@dimen/_250sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Gate # example"
+            android:textColor="@color/textColorLight"
+            android:textSize="@dimen/_15sdp" />
+        <TextView
+            android:id="@+id/bus_No"
+            android:maxWidth="@dimen/_250sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Bus # example"
+            android:textColor="@color/textColorLight"
+            android:textSize="@dimen/_15sdp" />
+        <TextView
+            android:id="@+id/remind_me_about"
+            android:maxWidth="@dimen/_250sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_25sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Flight # example"
+            android:textColor="@color/textColorLight"
+            android:textSize="@dimen/_15sdp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/bg_circle"
+        android:layout_above="@+id/btn_Edit"
+        android:layout_alignParentRight="true"
+        android:layout_margin="@dimen/_20sdp"
+        android:id="@+id/btn_Delete"
+        android:translationZ="1dp"
+        android:elevation="5dp"
+        >
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/delete_ic"
+            android:layout_centerInParent="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="@dimen/_35sdp"
+        android:layout_height="@dimen/_35sdp"
+        android:background="@drawable/bg_circle"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:id="@+id/btn_Edit"
+        android:translationZ="1dp"
+        android:elevation="5dp"
+        >
+
+        <ImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:src="@drawable/edit_ic"
+            android:layout_centerInParent="true"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

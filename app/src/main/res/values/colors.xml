@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#434743</color>
+    <color name="colorPrimaryDark">#353735</color>
+    <color name="colorAccent">#B8251E</color>
+    <color name="colorSecondary">#FCB400</color>
+    <color name="colorHint">#A1A1A1</color>
+    <color name="colorBlack">#000000</color>
+    <color name="text_Color">#152934    </color>
+    <color name="color_Black">#000000</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorBackgroundLight">#F8F8F8</color>
+    <color name="textColorLight">#A1A1A1</color>
+    <color name="bg_Meetings">#C5CC00</color>
+    <color name="bg_TODOList">#1F9EA5</color>
+    <color name="bg_Finance">#A17AFF</color>
+    <color name="bg_Goals">#FEC01D</color>
+    <color name="bg_Business">#00DC33</color>
+    <color name="bg_Trips">#C5CC00</color>
+    <color name="bg_Contacts">#E55934</color>
+    <color name="bg_VisionPlatform">#3FA2F1</color>
+    <color name="bg_HouseFinance">#B2B800</color>
+    <color name="bg_Banking">#F58223</color>
+    <color name="bg_Medical">#9A70FF</color>
+    <color name="bg_Shopping">#00DC33</color>
+    <color name="bg_Loans">#02A553</color>
+    <color name="bg_Transport">#ABC651</color>
+    <color name="bg_SavingPlan">#E90778</color>
+    <color name="bg_Education">#D3CE15</color>
+    <color name="bg_Insurance">#049FE7</color>
+    <color name="bg_StockAndBond">#ED1B2F</color>
+    <color name="bg_Income">#FCB816</color>
+    <color name="text_LightColor">#242424</color>
+    <color name="comment_Color">#A1A1A1</color>
+    <color name="light_Color">#05B2B5</color>
+    <color name="green">#02A553</color>
+    <color name="bg_red">#ED1B2F</color>
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/bg_rounded_border"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginHorizontal="@dimen/_20sdp"
+    android:paddingHorizontal="@dimen/_22sdp"
+    android:paddingVertical="@dimen/_10sdp">
+    <RelativeLayout
+        android:id="@+id/user_ImageLayout"
+        android:layout_width="@dimen/_55sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:layout_gravity="center"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/profile_Image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/user_img_ic" />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/profile_Image"
+            android:layout_marginTop="-8dp"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:src="@drawable/ic_green_dot"
+            app:civ_border_color="@color/colorWhite"
+            app:civ_border_width="2dp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_gravity="center_vertical"
+        android:layout_toRightOf="@id/user_ImageLayout"
+        android:layout_centerVertical="true"
+        android:fontFamily="@font/roboto_regular"
+        android:textFontWeight="600"
+        android:text="username"
+        android:textColor="@color/text_Color"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        android:maxLength="14"/>
+    <ImageView
+        android:id="@+id/like_Sign"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:src="@drawable/add_user_icon"
+        />
+
+</RelativeLayout>
